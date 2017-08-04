@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<title>Elementize</title>
+
+	{% block body %}
+	<div class='home-info'>
+		<p>See if words or phrases can be written as elements from the Periodic Table!</p>
+	</div>
+	<div id='input-form'>
+		<form action='{{ url_for("elementize") }}'>
+			<input type='text' name='input' placeholder='Enter text to elementize' autocomplete='off'>
+		</form>
+	</div>
+
+	<div class='ex-wrap'>
+		<div id='examples'>
+			<p>Examples:</p>
+			<ul>
+				<li>What is this place</li>
+				<li>Ice water</li>
+				<li>This is Sparta</li>
+				<li>Who is that Polish cat with whiskers</li>
+				<li>Scoop up this poop</li>
+			</ul>
+		</div>
+	</div>
+	{% endblock %}
+
+{% endblock %}

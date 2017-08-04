@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+<title>Elementize</title>
+
+	{% block body %}
+	<div class='elem-wrapper'>
+	{% if elemList != None %}
+		{% for w in elemList %}
+			{% if w == None %}
+				<div class='space'></div>
+			{% else %}
+				<div class='elemWord'>
+					{% for e in w %}
+						<div class='element'>
+							<div class='num'>{{ e['num'] }}</div>
+							<div class='sym'>{{ e['sym'] }}</div>
+							<div class='name'>{{ e['name'] }}</div>
+							<div class='mass'>{{ e['mass'] }}</div>
+						</div>
+					{% endfor %}
+				</div>
+			{% endif %}
+		{% endfor %}
+	{% else %}
+		<div class='home-info'>
+			<p>Cannot be elementized :(</p>
+		</div>
+	{% endif %}
+	</div>
+
+	<div class='link-back'>
+		<a href='{{ url_for("index") }}'>Elementize again!</a>
+	</div>
+	{% endblock %}
+
+{% endblock %}

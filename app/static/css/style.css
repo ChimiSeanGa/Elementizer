@@ -1,0 +1,104 @@
+body {
+	margin: 0 0 0 0;
+	font-family: 'Arial';
+}
+
+.title {
+	width: 100%;
+	text-align: center;
+	background-color: #aea;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.title #logo {
+	display: inline-block;
+	font-size: 37px;
+	width: 40px;
+	height: 40px;
+	border: 1px solid black;
+	vertical-align: middle;
+	line-height: 100%;
+}
+
+.title h1 {
+	margin: 0 0 0 20px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.home-info {
+	text-align: center;
+	margin-top: 30px;
+}
+
+#input-form {
+	text-align: center;
+	margin-top: 30px;
+}
+
+#input-form form input {
+	width: 500px;
+	font-size: 24px;
+}
+
+.ex-wrap {
+	margin-top: 30px;
+	text-align: center;
+	width: 100%;
+}
+
+#examples {
+	display: inline-block;
+	text-align: left;
+}
+
+.elem-wrapper {
+	text-align: center;
+	margin-top: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.elemWord {
+	display: inline-block;
+}
+
+.element {
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	vertical-align: middle;
+	border: 1px solid #000;
+	margin-bottom: 20px;
+}
+
+.element .num {
+	font-size: 18px;
+	width: 30px;
+}
+
+.element .sym {
+	font-size: 40px;
+}
+
+.element .name {
+	font-size: 12px;
+}
+
+.element .mass {
+	font-size: 12px;
+}
+
+.space {
+	display: inline-block;
+	vertical-align: middle;
+	width: 50px;
+	height: 100px;
+}
+
+.link-back {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
